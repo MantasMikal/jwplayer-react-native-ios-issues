@@ -12,24 +12,17 @@ export default () => {
         style={{flex: 1}}
         config={{
           autostart: true,
-          playlist: [
-            {
-              sources: [
-                {
-                  file: 'http://content.bitsontherun.com/videos/bkaovAYt-injeKYZS.mp4',
-                  label: 'Low Quality',
-                },
-                {
-                  file: 'http://content.bitsontherun.com/videos/bkaovAYt-kNspJqnJ.mp4',
-                  label: 'Hight Quality',
-                  default: true,
-                },
-              ],
-            },
-          ],
+          pipEnabled: true,
           styling: {
             colors: {},
           },
+          title: 'Single Inline Linear Preroll',
+          playlist: [
+            {
+              title: 'Single Inline Linear Preroll',
+              file: 'https://content.bitsontherun.com/videos/q1fx20VZ-52qL9xLP.mp4',
+            },
+          ],
         }}
       />
     );

@@ -7,13 +7,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 /* screens */
 import Home from './screens/Home';
-import ListExample from './screens/ListExample';
-import SingleExample from './screens/SingleExample';
-import DRMExample from './screens/DRMExample';
-import LocalFileExample from './screens/LocalFileExample';
-import SourcesExample from './screens/SourcesExample';
-import YoutubeExample from './screens/YoutubeExample';
-import PlayerInModal from './screens/PlayerInModal';
+import PIPExample from './screens/PIPExample';
+import Dynamic from './screens/DynamicExample';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,13 +18,8 @@ export default class App extends Component {
       <NavigationContainer onReady={() => RNBootSplash.hide({fade: true})}>
         <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Single" component={SingleExample} />
-          <Stack.Screen name="Modal" component={PlayerInModal} />
-          <Stack.Screen name="List" component={ListExample} />
-          <Stack.Screen name="DRM" component={DRMExample} />
-          <Stack.Screen name="Local" component={LocalFileExample} />
-          <Stack.Screen name="Sources" component={SourcesExample} />
-          <Stack.Screen name="Youtube" component={YoutubeExample} />
+          <Stack.Screen name="PIP" component={PIPExample} />
+          <Stack.Screen name="Dynamic" component={Dynamic} />
         </Stack.Navigator>
       </NavigationContainer>
     );
